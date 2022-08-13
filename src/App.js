@@ -12,13 +12,13 @@ function App() {
   const [productList, setProductList] = useState([]);
   // const [categoryList, setCategoryList] = useState([]);
    const fetchProducts = async()=>{
-    // const url = 'http://localhost:4000/';
+
     // const response = await axios.get('http://localhost:4000/product');
     const response = await axios.get('https://rahulamazon.herokuapp.com/product');
   setProductList(response.data);
   console.log(response);
 }
-https://rahulamazon.herokuapp.com/product
+
 
 useEffect(()=> {
   fetchProducts(); 
